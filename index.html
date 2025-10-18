@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>My Basic Website</title>
+        <link rel="icon" type="image/x-icon" href="images/klu.png" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <div>
+                <label>My Website</label>
+                <span>Welcome to my basic Website</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a onclick="navigateSection('s1')">Home</a></li>
+                    <li><a onclick="navigateSection('s2')">About</a></li>
+                    <li><a onclick="navigateSection('s3')">Services</a></li>
+                    <li><a onclick="navigateSection('s4')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="s1">
+            <div>
+                <h1>Home Page</h1>
+            </div>
+        </section>
+        <section id="s2">
+            <div>
+                <h1>About Page</h1>
+            </div>
+        </section>
+        <section id="s3">
+            <div>
+                <h1>Services Page</h1>
+            </div>
+        </section>
+        <section id="s4">
+            <div>
+                <h1>Contact Page</h1>
+            </div>
+        </section>
+        <footer>Copyright @ 2025, All rights reserved.</footer>
+    </body>
+    <script>
+        function navigateSection(id)
+        {
+            //alert(id);
+            document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+</html>

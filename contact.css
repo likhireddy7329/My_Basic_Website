@@ -1,0 +1,74 @@
+html,body{
+  margin: 0;  
+  background: lightblue;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: green;
+    color: white;
+}
+header nav{
+    width: 100%;
+    height: 30px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header div{
+    width: 100%;
+    height: 70px;
+    /*center allignment*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header div label{
+    font-size: 20pt;
+
+}
+header nav ul{
+    padding: 0;      /*to remove spaces in four sides*/
+    list-style: none;
+    display: flex;         /*to make them in single line*/
+}
+header nav ul li{
+     margin: 0 20px 0 30px;   /*t l b r*/
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul  li a:hover{
+    text-decoration: underline;
+}
+footer{
+    height: 40px;
+    background: black;
+    width: 100%;
+    color: white;
+    font-size: 8pt;
+    line-height: 40px;  /*vertical centre align of text*/
+    text-align: center;   /*to make text in centre*/
+}
+section{
+    width: 100%;
+    height: calc(100% - 140px);
+    display: flex;
+    justify-content: center;
+}
+section div{
+    width: calc(100% - 100px);
+    background: greenyellow;
+    /*height: 100px;*/
+    margin-top: 20px;
+    border-radius: 5px;
+   margin-bottom: 20px;
+   color: blueviolet;
+}
+section div p{
+    color: brown;
+}
